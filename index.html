@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SNIKIDOS • AI Film Masterclass</title>
+  <meta name="description" content="Learn how SNIKIDOS creates viral AI film trailers. Live class only ₹20." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <header class="site-header">
+    <a href="#" class="logo-wrap">
+      <span class="logo-mark">◎</span>
+      <span class="logo-text">SNIKIDOS</span>
+    </a>
+
+    <button class="menu-btn" aria-label="Toggle menu">☰</button>
+    <nav class="main-nav">
+      <a href="#course">Course</a>
+      <a href="#projects">Projects</a>
+      <a href="#register">Register</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-3d">
+      <div class="hero-copy">
+        <p class="eyebrow">LIVE MASTERCLASS • ONLY ₹20</p>
+        <h1>Create Viral <span>AI Film Trailers</span> with SNIKIDOS</h1>
+        <p>
+          We are a 2-person creative team. We made a Hanuman Ji AI trailer that went viral.
+          Now we are teaching our exact workflow in a practical live class.
+        </p>
+        <div class="hero-actions">
+          <a href="#register" class="btn btn-primary">Join Live Class</a>
+          <a href="#projects" class="btn btn-ghost">See Our Work</a>
+        </div>
+      </div>
+
+      <div class="hero-card card-3d" id="tilt-card">
+        <div class="badge">Fast Start</div>
+        <h2>What You Will Learn</h2>
+        <ul>
+          <li>Story & scripting for cinematic trailers</li>
+          <li>Prompting for consistent characters</li>
+          <li>AI sound generation + voice sync</li>
+          <li>Editing flow for final reel</li>
+        </ul>
+        <p class="price">Total Fee: <strong>₹20</strong></p>
+      </div>
+    </section>
+
+    <section class="stats">
+      <article><h3>₹20</h3><p>Affordable for everyone</p></article>
+      <article><h3>Live</h3><p>Direct support from creators</p></article>
+      <article><h3>Beginner</h3><p>No prior experience needed</p></article>
+    </section>
+
+    <section id="course" class="section">
+      <h2>Why This Course Helps You</h2>
+      <div class="grid two">
+        <article class="panel">
+          <h3>Build a Creative Career</h3>
+          <p>AI film skills can help you get freelance work, build social media pages, and make branded content quickly.</p>
+        </article>
+        <article class="panel">
+          <h3>Save Time & Cost</h3>
+          <p>Instead of expensive production, learn practical low-budget methods to create high-quality output.</p>
+        </article>
+        <article class="panel">
+          <h3>Clear Step-by-Step Structure</h3>
+          <p>From idea to final trailer: scripting, prompt engineering, sound design, character consistency, and edit pipeline.</p>
+        </article>
+        <article class="panel">
+          <h3>Portfolio-Ready Projects</h3>
+          <p>Create reels you can post on Instagram and YouTube to attract clients and grow your audience.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Our Portfolio & Social Proof</h2>
+      <p class="section-intro">Embed your latest reels below by replacing links in code (YouTube + Instagram).</p>
+      <div class="grid two">
+        <article class="panel embed-box">
+          <h3>YouTube Trailer</h3>
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" loading="lazy" allowfullscreen></iframe>
+        </article>
+        <article class="panel embed-box">
+          <h3>Instagram Reel</h3>
+          <iframe src="https://www.instagram.com/reel/C5X9N1Xx0yM/embed" title="Instagram Reel" loading="lazy"></iframe>
+        </article>
+      </div>
+    </section>
+
+    <section id="register" class="section">
+      <h2>Reserve Your Seat</h2>
+      <div class="grid two">
+        <article class="panel">
+          <h3>Step 1: Fill Registration</h3>
+          <form id="reg-form" class="reg-form">
+            <label>Full Name<input required name="name" type="text" placeholder="Your full name" /></label>
+            <label>Phone Number<input required name="phone" type="tel" placeholder="10-digit phone" pattern="[0-9]{10}" /></label>
+            <label>Email (optional)<input name="email" type="email" placeholder="name@email.com" /></label>
+            <label>City<input name="city" type="text" placeholder="Your city" /></label>
+            <button type="submit" class="btn btn-primary">Register Now</button>
+          </form>
+          <p class="note">Data saves in browser locally. For real production, connect this form to Google Sheets/Firebase backend.</p>
+        </article>
+
+        <article class="panel">
+          <h3>Step 2: Pay ₹20 Securely</h3>
+          <p>After submitting form, complete payment using Razorpay:</p>
+          <div class="pay-box">
+            <form>
+              <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_SGSwKOdWGPTZvt" async></script>
+            </form>
+          </div>
+          <p class="note">Take a payment screenshot and send to WhatsApp for quick confirmation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Registrations (Owner View)</h2>
+      <article class="panel">
+        <div class="table-actions">
+          <button id="download" class="btn btn-ghost">Download CSV</button>
+          <button id="clear" class="btn btn-ghost danger">Clear All</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Name</th><th>Phone</th><th>Email</th><th>City</th><th>Time</th></tr>
+            </thead>
+            <tbody id="reg-table-body"></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <p>© <span id="year"></span> SNIKIDOS • AI Film Learning</p>
+    <p>Instagram: @snikidos • YouTube: SNIKIDOS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
