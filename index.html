@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SNIKIDOS | AI Film Masterclass</title>
+    <meta
+      name="description"
+      content="Join SNIKIDOS live class and learn how to create viral AI films with scripting, prompting, sound design, character consistency, and editing."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a href="#home" class="logo-wrap" aria-label="SNIKIDOS home">
+        <span class="logo-eye"></span>
+        <span class="logo-text">SNIKIDOS</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#curriculum">Curriculum</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#register">Register</a>
+      </nav>
+      <a href="#register" class="btn btn-small">Enroll ₹20</a>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="pill">Live AI Film Workshop • 2 Creator Team</p>
+          <h1>Create Viral AI Trailers with <span>SNIKIDOS</span></h1>
+          <p>
+            Learn the exact workflow we used to create high-impact spiritual AI trailer style
+            videos. From script to final edit, we teach everything in simple steps.
+          </p>
+
+          <div class="price-row">
+            <div>
+              <p class="label">Course fee</p>
+              <p class="price">₹20 only</p>
+            </div>
+            <div>
+              <p class="label">Format</p>
+              <p class="price-small">Live class + recording</p>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn" href="#register">Book your seat</a>
+            <a class="btn btn-ghost" href="#portfolio">See our projects</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" role="img" aria-label="3D style visual card">
+          <div class="visual-card card-main">
+            <h2>Modern 3D Look</h2>
+            <p>Clean, fast, mobile-first website inspired by premium animation brands.</p>
+          </div>
+          <div class="visual-card card-float card-float-1">Prompting</div>
+          <div class="visual-card card-float card-float-2">Sound Sync</div>
+          <div class="visual-card card-float card-float-3">Character Continuity</div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>Why this course can change your journey</h2>
+        <div class="grid three">
+          <article class="card">
+            <h3>Low cost, high value</h3>
+            <p>
+              Big institutes charge thousands. We keep this practical workshop affordable at ₹20 so
+              anyone can start.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Real workflow, not theory</h3>
+            <p>
+              We teach our personal creation pipeline used in real social content, from idea to
+              viral-ready final output.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Small team advantage</h3>
+            <p>
+              We are a two-person creator team. You learn fast methods that work without big budget
+              or large staff.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="curriculum" class="section">
+        <h2>What you will learn</h2>
+        <div class="grid two">
+          <ul class="card checklist">
+            <li>Story scripting for emotional AI trailers</li>
+            <li>Prompt engineering for cinematic visuals</li>
+            <li>Generating music + cinematic sound effects</li>
+            <li>Voice generation and sound synchronization</li>
+            <li>Creating continuous characters across shots</li>
+            <li>Editing workflow for smooth final output</li>
+          </ul>
+          <div class="card">
+            <h3>Bonus</h3>
+            <p>
+              Portfolio guidance: how to showcase your work professionally on Instagram, YouTube,
+              and your own website while keeping loading speed fast.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section">
+        <h2>Social proof & portfolio showcase</h2>
+        <p class="section-intro">
+          Replace these links with your real Instagram reel and YouTube trailer embeds.
+        </p>
+        <div class="grid two">
+          <div class="card embed">
+            <h3>YouTube project</h3>
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="YouTube video"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="card embed">
+            <h3>Instagram reel</h3>
+            <iframe
+              src="https://www.instagram.com/reel/C5P7vEmMUKj/embed"
+              title="Instagram reel"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="register" class="section register">
+        <h2>Register now • Limited seats</h2>
+        <div class="grid two">
+          <div class="card">
+            <h3>Step 1: Fill your details</h3>
+            <form id="registrationForm" class="register-form">
+              <label>
+                Full Name
+                <input type="text" name="name" required />
+              </label>
+              <label>
+                Mobile Number
+                <input type="tel" name="phone" required pattern="[0-9]{10}" />
+              </label>
+              <label>
+                Email (optional)
+                <input type="email" name="email" />
+              </label>
+              <label>
+                City
+                <input type="text" name="city" required />
+              </label>
+              <button class="btn" type="submit">Save registration</button>
+            </form>
+            <p id="formMessage" class="message" aria-live="polite"></p>
+          </div>
+
+          <div class="card">
+            <h3>Step 2: Complete payment (₹20)</h3>
+            <p>Use Razorpay button below:</p>
+            <div class="payment-wrap">
+              <form>
+                <script
+                  src="https://checkout.razorpay.com/v1/payment-button.js"
+                  data-payment_button_id="pl_SGSwKOdWGPTZvt"
+                  async
+                ></script>
+              </form>
+            </div>
+            <button id="downloadCsv" class="btn btn-ghost" type="button">Download registration CSV</button>
+            <p class="hint">Tip: Download CSV daily to keep track of all registered users.</p>
+          </div>
+        </div>
+
+        <div class="card table-wrap">
+          <h3>Saved registrations (this browser)</h3>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Phone</th>
+                  <th>Email</th>
+                  <th>City</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody id="registrationTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> SNIKIDOS • Built for speed using HTML, CSS, JS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
